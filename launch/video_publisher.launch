@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<launch>
+  <node name="video_publisher" pkg="video_publisher" type="video_publisher_node.py" output="screen">
+    <rosparam command="load" file="$(find video_publisher)/launch/video_publisher.yaml"/>
+  </node>
+</launch>
